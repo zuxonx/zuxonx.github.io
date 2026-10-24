@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>kikcmy.web.id</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+	<style>
+		/* ui-ux-pro-max · Minimalism & Swiss Style · personal link page */
+		:root{
+			--bg:#FFFFFF; --fg:#111111; --muted:#666666;
+			--border:#E6E6E6; --hover:#F5F5F5;
+			--accent:#111111; --radius:14px;
+			--font:'Inter',system-ui,-apple-system,sans-serif;
+			--space-sm:0.75rem; --space-md:1rem; --space-lg:2rem; --space-xl:4rem;
+		}
+		*{margin:0;padding:0;box-sizing:border-box}
+		html{scroll-behavior:smooth}
+		body{
+			font-family:var(--font);
+			background:var(--bg);color:var(--fg);
+			line-height:1.5;font-size:16px;
+			min-height:100vh;
+			display:flex;align-items:center;justify-content:center;
+			padding:var(--space-lg) var(--space-md);
+		}
+		a{color:var(--fg);text-decoration:none}
+		.wrap{width:100%;max-width:520px}
+		/* header */
+		.logo{
+			width:56px;height:56px;border-radius:50%;
+			background:#111;color:#fff;
+			display:flex;align-items:center;justify-content:center;
+			font-weight:800;font-size:20px;margin-bottom:var(--space-md);
+			letter-spacing:.5px;
+		}
+		h1{font-size:28px;font-weight:800;letter-spacing:-0.5px;margin-bottom:var(--space-sm)}
+		.tag{
+			color:var(--muted);font-size:15px;font-weight:500;margin-bottom:var(--space-lg);
+			max-width:34ch;
+		}
+		/* link list */
+		.links{display:flex;flex-direction:column;gap:10px}
+		.link{
+			display:flex;align-items:center;justify-content:space-between;
+			padding:16px 18px;
+			border:1px solid var(--border);border-radius:var(--radius);
+			font-weight:600;font-size:15px;
+			transition:background .2s ease,transform .15s ease,border-color .2s ease;
+			cursor:pointer;
+		}
+		.link:hover{background:var(--hover);transform:translateY(-1px);border-color:#d6d6d6}
+		.link .arr{color:var(--muted);transition:transform .2s ease}
+		.link:hover .arr{transform:translateX(3px)}
+		/* footer */
+		.foot{
+			margin-top:var(--space-lg);padding-top:var(--space-md);
+			border-top:1px solid var(--border);
+			font-size:13px;color:var(--muted);
+			display:flex;justify-content:space-between;align-items:center;
+		}
+		.foot a:hover{color:var(--fg)}
+		@media (prefers-reduced-motion:reduce){
+			*{transition:none!important}
+			html{scroll-behavior:auto}
+		}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<div class="logo">k.</div>
+		<h1>kikcmy.web.id</h1>
+		<p class="tag">Space kecil di internet — semua tautan penting, satu halaman.</p>
+
+		<nav class="links" aria-label="Tautan">
+			<a class="link" href="https://nyanhosting.id" target="_blank" rel="noopener">Ny an Hosting <span class="arr">→</span></a>
+			<a class="link" href="mailto:hello@kikcmy.web.id">Email <span class="arr">→</span></a>
+			<a class="link" href="https://github.com" target="_blank" rel="noopener">GitHub <span class="arr">→</span></a>
+			<a class="link" href="#" data-placeholder>Tautan 4 (isi nanti) <span class="arr">→</span></a>
+		</nav>
+
+		<footer class="foot">
+			<span>© 2026 kikcmy</span>
+			<a href="https://html5up.net" target="_blank" rel="noopener" style="color:inherit">design system · ui-ux-pro-max</a>
+		</footer>
+	</div>
+</body>
+</html>
